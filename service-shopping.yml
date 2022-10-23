@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: service-shopping
+  data:
+    mongodb:
+      database: bootcamp_shopping_db
+      host: localhost
+      port: 8904
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8006
+message:
+  path-shopping: /api/v1/shoppings
+  uri: /api/v1/customerTypes/

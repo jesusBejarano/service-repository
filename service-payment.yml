@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: service-payment
+  data:
+    mongodb:
+      database: bootcamp_payment_db
+      host: localhost
+      port: 8905
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8004
+message:
+  path-payment: /api/v1/payment
+  uri: /api/v1/customerProductsActive/

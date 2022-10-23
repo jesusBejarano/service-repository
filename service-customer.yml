@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: service-customer
+  data:
+    mongodb:
+      database: bootcamp_customer_db
+      host: localhost
+      port: 8900
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8000
+message:
+  path-customer: /api/v1/customers
+  path-customerType: /api/v1/customerTypes
+  uri: /api/v1/customerTypes/

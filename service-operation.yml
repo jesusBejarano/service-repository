@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: service-operation
+  data:
+    mongodb:
+      database: bootcamp_operation_db
+      host: localhost
+      port: 8903
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8003
+message:
+  path-operation: /api/v1/operations
+  path-operationType: /api/v1/operationTypes
+  uri: /api/v1/operationTypes
+  uri2: /api/v1/customerProductsPassive
